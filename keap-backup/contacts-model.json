@@ -1,0 +1,548 @@
+{
+    "custom_fields": [
+        {
+            "id": "41",
+            "label": "Centro",
+            "options": [
+                {
+                    "id": "Portici",
+                    "label": "Portici",
+                    "options": null
+                },
+                {
+                    "id": "Arzano",
+                    "label": "Arzano",
+                    "options": null
+                },
+                {
+                    "id": "Torre del Greco",
+                    "label": "Torre del Greco",
+                    "options": null
+                },
+                {
+                    "id": "Pomigliano",
+                    "label": "Pomigliano",
+                    "options": null
+                }
+            ],
+            "record_type": "CONTACT",
+            "field_type": "DROPDOWN",
+            "default_value": null,
+            "group_id": "3",
+            "field_name": "Centro"
+        },
+        {
+            "id": "127",
+            "label": "A1: Data e ora",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "DATE_TIME",
+            "default_value": null,
+            "group_id": "15",
+            "field_name": "Dataeora"
+        },
+        {
+            "id": "129",
+            "label": "A2: Data e ora",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "DATE_TIME",
+            "default_value": null,
+            "group_id": "17",
+            "field_name": "Dataeora1"
+        },
+        {
+            "id": "131",
+            "label": "A3: Data e ora",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "DATE_TIME",
+            "default_value": null,
+            "group_id": "19",
+            "field_name": "A3Dataeora"
+        },
+        {
+            "id": "133",
+            "label": "A1: Trattamenti",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "TEXT",
+            "default_value": null,
+            "group_id": "15",
+            "field_name": "A1Trattamenti"
+        },
+        {
+            "id": "135",
+            "label": "A2: Trattamenti",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "TEXT",
+            "default_value": null,
+            "group_id": "17",
+            "field_name": "A2Trattamenti"
+        },
+        {
+            "id": "137",
+            "label": "A3: Trattamenti",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "TEXT",
+            "default_value": null,
+            "group_id": "19",
+            "field_name": "A3Trattamenti"
+        },
+        {
+            "id": "139",
+            "label": "A1: Presente",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "YES_NO",
+            "default_value": null,
+            "group_id": "15",
+            "field_name": "A1Presente"
+        },
+        {
+            "id": "141",
+            "label": "A2: Presente",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "YES_NO",
+            "default_value": null,
+            "group_id": "17",
+            "field_name": "A2Presente"
+        },
+        {
+            "id": "143",
+            "label": "A3: Presente",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "YES_NO",
+            "default_value": null,
+            "group_id": "19",
+            "field_name": "A3Presente"
+        },
+        {
+            "id": "145",
+            "label": "A1: Rinviato",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "YES_NO",
+            "default_value": null,
+            "group_id": "15",
+            "field_name": "A1Rinviato"
+        },
+        {
+            "id": "147",
+            "label": "A1: Annullato",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "YES_NO",
+            "default_value": null,
+            "group_id": "15",
+            "field_name": "A1Annullato"
+        },
+        {
+            "id": "151",
+            "label": "A2: Rinviato",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "YES_NO",
+            "default_value": null,
+            "group_id": "17",
+            "field_name": "A2Rinviato"
+        },
+        {
+            "id": "153",
+            "label": "A2: Annullato",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "YES_NO",
+            "default_value": null,
+            "group_id": "17",
+            "field_name": "A2Annullato"
+        },
+        {
+            "id": "157",
+            "label": "A3: Rinviato",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "YES_NO",
+            "default_value": null,
+            "group_id": "19",
+            "field_name": "A3Rinviato"
+        },
+        {
+            "id": "159",
+            "label": "A3: Annullato",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "YES_NO",
+            "default_value": null,
+            "group_id": "19",
+            "field_name": "A3Annullato"
+        },
+        {
+            "id": "163",
+            "label": "Rinvii",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "WHOLE_NUMBER",
+            "default_value": null,
+            "group_id": "3",
+            "field_name": "Rinvii"
+        },
+        {
+            "id": "165",
+            "label": "IstanceIDSendapp",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "TEXT",
+            "default_value": null,
+            "group_id": "3",
+            "field_name": "IstanceIDSendapp"
+        },
+        {
+            "id": "167",
+            "label": "No-Show",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "WHOLE_NUMBER",
+            "default_value": null,
+            "group_id": "3",
+            "field_name": "NoShow"
+        },
+        {
+            "id": "171",
+            "label": "cleanPhone",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "TEXT",
+            "default_value": null,
+            "group_id": "3",
+            "field_name": "cleanPhone"
+        },
+        {
+            "id": "173",
+            "label": "A1: Ora",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "TEXT",
+            "default_value": null,
+            "group_id": "15",
+            "field_name": "A1Ora"
+        },
+        {
+            "id": "177",
+            "label": "A2: Ora",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "TEXT",
+            "default_value": null,
+            "group_id": "17",
+            "field_name": "A2Ora"
+        },
+        {
+            "id": "179",
+            "label": "A2: Data",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "DATE",
+            "default_value": null,
+            "group_id": "17",
+            "field_name": "A2Data"
+        },
+        {
+            "id": "181",
+            "label": "A3: Ora",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "TEXT",
+            "default_value": null,
+            "group_id": "19",
+            "field_name": "A3Ora"
+        },
+        {
+            "id": "185",
+            "label": "A1: Data",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "DATE",
+            "default_value": null,
+            "group_id": "15",
+            "field_name": "A1Data"
+        },
+        {
+            "id": "187",
+            "label": "A3: Data",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "DATE",
+            "default_value": null,
+            "group_id": "19",
+            "field_name": "A3Data"
+        },
+        {
+            "id": "189",
+            "label": "Numero referral",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "WHOLE_NUMBER",
+            "default_value": null,
+            "group_id": "21",
+            "field_name": "Numeroreferral"
+        },
+        {
+            "id": "191",
+            "label": "A1: Valore",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "DECIMAL_NUMBER",
+            "default_value": null,
+            "group_id": "15",
+            "field_name": "A1Valore"
+        },
+        {
+            "id": "193",
+            "label": "A2: Valore",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "DECIMAL_NUMBER",
+            "default_value": null,
+            "group_id": "17",
+            "field_name": "A2Valore"
+        },
+        {
+            "id": "195",
+            "label": "A3: Valore",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "DECIMAL_NUMBER",
+            "default_value": null,
+            "group_id": "19",
+            "field_name": "A3Valore"
+        },
+        {
+            "id": "197",
+            "label": "A1: keapID",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "TEXT",
+            "default_value": null,
+            "group_id": "15",
+            "field_name": "A1keapID"
+        },
+        {
+            "id": "199",
+            "label": "A2: KeapID",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "TEXT",
+            "default_value": null,
+            "group_id": "17",
+            "field_name": "A2KeapID"
+        },
+        {
+            "id": "201",
+            "label": "A3: keapID",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "TEXT",
+            "default_value": null,
+            "group_id": "19",
+            "field_name": "A3keapID"
+        },
+        {
+            "id": "203",
+            "label": "A1: Data rinvio",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "DATE",
+            "default_value": null,
+            "group_id": "15",
+            "field_name": "Datarinvio"
+        },
+        {
+            "id": "207",
+            "label": "A2: Data rinvio",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "DATE",
+            "default_value": null,
+            "group_id": "17",
+            "field_name": "A2Datarinvio"
+        },
+        {
+            "id": "209",
+            "label": "A3: Data rinvio",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "DATE",
+            "default_value": null,
+            "group_id": "19",
+            "field_name": "A3Datarinvio"
+        },
+        {
+            "id": "213",
+            "label": "A1: Data precedente",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "DATE",
+            "default_value": null,
+            "group_id": "15",
+            "field_name": "A1Dataprecedente"
+        },
+        {
+            "id": "215",
+            "label": "A2: Data precedente",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "DATE",
+            "default_value": null,
+            "group_id": "17",
+            "field_name": "A2Dataprecedente"
+        },
+        {
+            "id": "217",
+            "label": "A3: Data precedente",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "DATE",
+            "default_value": null,
+            "group_id": "19",
+            "field_name": "A3Dataprecedente"
+        },
+        {
+            "id": "219",
+            "label": "A4: Trattamenti",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "TEXT",
+            "default_value": null,
+            "group_id": "23",
+            "field_name": "A4Trattamenti"
+        },
+        {
+            "id": "221",
+            "label": "A4: Ora",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "TEXT",
+            "default_value": null,
+            "group_id": "23",
+            "field_name": "A4Ora"
+        },
+        {
+            "id": "225",
+            "label": "A4: Data",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "DATE",
+            "default_value": null,
+            "group_id": "23",
+            "field_name": "A4Data"
+        },
+        {
+            "id": "227",
+            "label": "A5: Trattamenti",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "TEXT",
+            "default_value": null,
+            "group_id": "25",
+            "field_name": "A5Trattamenti"
+        },
+        {
+            "id": "229",
+            "label": "A5: Ora",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "TEXT",
+            "default_value": null,
+            "group_id": "25",
+            "field_name": "A5Ora"
+        },
+        {
+            "id": "231",
+            "label": "A5: Data",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "DATE",
+            "default_value": null,
+            "group_id": "25",
+            "field_name": "A5Data"
+        },
+        {
+            "id": "233",
+            "label": "NextAppointmentDate",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "DATE",
+            "default_value": null,
+            "group_id": "27",
+            "field_name": "NextAppointmentDate"
+        },
+        {
+            "id": "235",
+            "label": "NextAppointmentTime",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "TEXT",
+            "default_value": null,
+            "group_id": "27",
+            "field_name": "NextAppointmentTime"
+        },
+        {
+            "id": "237",
+            "label": "NextAppointmentTreatments",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "TEXT",
+            "default_value": null,
+            "group_id": "27",
+            "field_name": "NextAppointmentTreatments"
+        },
+        {
+            "id": "239",
+            "label": "Apt Puntuale e premiata",
+            "options": null,
+            "record_type": "CONTACT",
+            "field_type": "WHOLE_NUMBER",
+            "default_value": null,
+            "group_id": "3",
+            "field_name": "AptPuntualeepremiata"
+        }
+    ],
+    "optional_properties": [
+        "update_time",
+        "create_time",
+        "score_value",
+        "tag_ids",
+        "links",
+        "addresses",
+        "anniversary_date",
+        "birth_date",
+        "company",
+        "contact_type",
+        "custom_fields",
+        "email_addresses",
+        "fax_numbers",
+        "job_title",
+        "leadsource_id",
+        "middle_name",
+        "notes",
+        "origin",
+        "owner_id",
+        "phone_numbers",
+        "preferred_locale",
+        "preferred_name",
+        "prefix",
+        "referral_code",
+        "social_accounts",
+        "source_type",
+        "spouse_name",
+        "suffix",
+        "time_zone",
+        "website",
+        "utm_parameters"
+    ]
+}

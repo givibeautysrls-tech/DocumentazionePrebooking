@@ -1,0 +1,1555 @@
+{
+    "tags": [
+        {
+            "id": "92",
+            "name": "A – MH – Salon Startup – Iscritto",
+            "description": "",
+            "category": {
+                "id": "15"
+            },
+            "create_time": "2018-12-04T18:26:26Z",
+            "update_time": "2025-03-31T13:44:18Z"
+        },
+        {
+            "id": "103",
+            "name": "AT – MH – Conferma Mail – Inizia",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-01-02T16:40:25Z",
+            "update_time": "2025-03-31T13:44:04Z"
+        },
+        {
+            "id": "107",
+            "name": "S – MH – Email da Confermare",
+            "description": "",
+            "category": {
+                "id": "13"
+            },
+            "create_time": "2026-02-02T13:02:01Z",
+            "update_time": "2025-03-31T13:43:51Z"
+        },
+        {
+            "id": "109",
+            "name": "S – MH – Email Confermata",
+            "description": "",
+            "category": {
+                "id": "13"
+            },
+            "create_time": "2026-02-02T13:06:46Z",
+            "update_time": "2025-03-31T13:42:26Z"
+        },
+        {
+            "id": "111",
+            "name": "A – MH – Disiscritto",
+            "description": "",
+            "category": {
+                "id": "15"
+            },
+            "create_time": "2026-02-02T13:25:25Z",
+            "update_time": "2025-03-31T13:41:54Z"
+        },
+        {
+            "id": "113",
+            "name": "AT – NMV – Temperatura Clienti – Inizio",
+            "description": "Auto-created Fri Feb 14 10:17:30 EST 2025",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-02-02T15:17:31Z",
+            "update_time": "2025-10-20T09:55:45Z"
+        },
+        {
+            "id": "115",
+            "name": "S – NMV – Temperatura Clienti – Tiepido",
+            "description": "Auto-created Fri Feb 14 10:22:08 EST 2025",
+            "category": {
+                "id": "13"
+            },
+            "create_time": "2026-02-02T15:22:08Z",
+            "update_time": "2025-10-20T09:55:16Z"
+        },
+        {
+            "id": "117",
+            "name": "S – NMV – Temperatura Clienti – Freddo",
+            "description": "Auto-created Fri Feb 14 10:22:35 EST 2025",
+            "category": {
+                "id": "13"
+            },
+            "create_time": "2026-02-02T15:22:36Z",
+            "update_time": "2025-10-20T09:56:06Z"
+        },
+        {
+            "id": "119",
+            "name": "S – NMV – Temperatura Clienti – Caldo",
+            "description": "Auto-created Fri Feb 14 10:24:01 EST 2025",
+            "category": {
+                "id": "13"
+            },
+            "create_time": "2026-02-02T15:24:02Z",
+            "update_time": "2025-10-20T09:54:29Z"
+        },
+        {
+            "id": "121",
+            "name": "A – MH – Privacy Policy Accettata",
+            "description": "",
+            "category": {
+                "id": "15"
+            },
+            "create_time": "2025-10-03T11:41:45Z",
+            "update_time": "2025-03-31T13:34:19Z"
+        },
+        {
+            "id": "125",
+            "name": "MH – Team",
+            "description": "",
+            "category": {
+                "id": "21"
+            },
+            "create_time": "2025-11-03T15:36:16Z",
+            "update_time": "2025-03-31T13:33:58Z"
+        },
+        {
+            "id": "133",
+            "name": "S – MH – Lead",
+            "description": "Tutti i lead Di MH",
+            "category": {
+                "id": "13"
+            },
+            "create_time": "2025-11-03T17:48:51Z",
+            "update_time": "2025-03-31T13:33:41Z"
+        },
+        {
+            "id": "135",
+            "name": "AT – MH – Salon Startup – inizia",
+            "description": "Fa partire automazione Mail nuovi iscritti 
+SS",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-01-03T11:11:11Z",
+            "update_time": "2025-03-31T13:33:11Z"
+        },
+        {
+            "id": "137",
+            "name": "AT – NMV – PreBooking – Inizia",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2027-07-03T13:53:29Z",
+            "update_time": "2025-03-31T13:54:09Z"
+        },
+        {
+            "id": "139",
+            "name": "A – NMV – Proposta Rifiutata",
+            "description": "",
+            "category": {
+                "id": "15"
+            },
+            "create_time": "2025-03-31T13:54:00Z",
+            "update_time": "2025-03-31T13:54:00Z"
+        },
+        {
+            "id": "141",
+            "name": "A – NMV – Proposta Accettata",
+            "description": "",
+            "category": {
+                "id": "15"
+            },
+            "create_time": "2025-03-31T13:54:23Z",
+            "update_time": "2025-03-31T13:54:23Z"
+        },
+        {
+            "id": "143",
+            "name": "A – NMV – Show",
+            "description": "",
+            "category": {
+                "id": "15"
+            },
+            "create_time": "2027-03-07T15:02:52Z",
+            "update_time": "2025-03-31T14:05:36Z"
+        },
+        {
+            "id": "145",
+            "name": "A – NMV – No Show",
+            "description": "",
+            "category": {
+                "id": "15"
+            },
+            "create_time": "2025-03-31T14:05:55Z",
+            "update_time": "2025-03-31T14:05:55Z"
+        },
+        {
+            "id": "147",
+            "name": "4/02/2025 5:04 AM",
+            "description": "Auto-created Wed Apr 02 05:04:48 EDT 2025",
+            "category": {
+                "id": "19"
+            },
+            "create_time": "2025-04-02T09:04:48Z",
+            "update_time": "2025-04-02T09:04:48Z"
+        },
+        {
+            "id": "149",
+            "name": "4/02/2025 5:16 AM",
+            "description": "Auto-created Wed Apr 02 05:16:03 EDT 2025",
+            "category": {
+                "id": "19"
+            },
+            "create_time": "2025-04-02T09:16:04Z",
+            "update_time": "2025-04-02T09:16:04Z"
+        },
+        {
+            "id": "151",
+            "name": "A – NMV – Proposta sospesa",
+            "description": "",
+            "category": {
+                "id": "15"
+            },
+            "create_time": "2025-04-02T09:26:34Z",
+            "update_time": "2025-04-02T09:26:34Z"
+        },
+        {
+            "id": "153",
+            "name": "TEST–MANYCHATAPI",
+            "description": "",
+            "category": {
+                "id": "23"
+            },
+            "create_time": "2025-04-03T11:15:02Z",
+            "update_time": "2025-04-03T11:15:02Z"
+        },
+        {
+            "id": "155",
+            "name": "A – NMV – Recensione inviata",
+            "description": "",
+            "category": {
+                "id": "15"
+            },
+            "create_time": "2027-04-04T11:22:03Z",
+            "update_time": "2025-04-28T11:23:11Z"
+        },
+        {
+            "id": "157",
+            "name": "A – NMV – PromoOptin",
+            "description": "",
+            "category": {
+                "id": "15"
+            },
+            "create_time": "2026-10-05T10:31:48Z",
+            "update_time": "2025-07-24T12:01:31Z"
+        },
+        {
+            "id": "159",
+            "name": "NMV – Deodorante Neutro Essenza",
+            "description": "Tag per NMV – Deodorante Neutro Essenza",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T13:57:43Z",
+            "update_time": "2025-06-13T13:57:43Z"
+        },
+        {
+            "id": "161",
+            "name": "NMV – Acqua Liposomiale",
+            "description": "Tag per NMV – Acqua Liposomiale",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T13:57:55Z",
+            "update_time": "2025-06-13T13:57:55Z"
+        },
+        {
+            "id": "163",
+            "name": "NMV – Crema Corpo Anticellulite",
+            "description": "Tag per NMV – Crema Corpo Anticellulite",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T13:58:06Z",
+            "update_time": "2025-06-13T13:58:06Z"
+        },
+        {
+            "id": "165",
+            "name": "NMV – Crema Corpo Gel Rassodante",
+            "description": "Tag per NMV – Crema Corpo Gel Rassodante",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:02:50Z",
+            "update_time": "2025-06-13T14:02:50Z"
+        },
+        {
+            "id": "167",
+            "name": "NMV – Deodorante Neutro Essenza Base",
+            "description": "Tag per NMV – Deodorante Neutro Essenza Base",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:03:06Z",
+            "update_time": "2025-06-13T14:03:06Z"
+        },
+        {
+            "id": "169",
+            "name": "NMV – Detergente Neutro Alta Tolleranza",
+            "description": "Tag per NMV – Detergente Neutro Alta 
+Tolleranza",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:05:17Z",
+            "update_time": "2025-06-13T14:05:17Z"
+        },
+        {
+            "id": "171",
+            "name": "NMV – Detergente Neutro Anti Imperfezioni",
+            "description": "Tag per NMV – Detergente Neutro Anti 
+Imperfezioni",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:05:33Z",
+            "update_time": "2025-06-13T14:05:33Z"
+        },
+        {
+            "id": "173",
+            "name": "NMV – Emulsione 100ml",
+            "description": "Tag per NMV – Emulsione 100ml",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:05:47Z",
+            "update_time": "2025-06-13T14:05:47Z"
+        },
+        {
+            "id": "175",
+            "name": "NMV – Emulsione 250ml",
+            "description": "Tag per NMV – Emulsione 250ml",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:05:56Z",
+            "update_time": "2025-06-13T14:05:56Z"
+        },
+        {
+            "id": "177",
+            "name": "NMV – Emulsione da 50 ml",
+            "description": "Tag per NMV – Emulsione da 50 ml",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:06:04Z",
+            "update_time": "2025-06-13T14:06:04Z"
+        },
+        {
+            "id": "179",
+            "name": "NMV – Scrub Corpo 450gr",
+            "description": "Tag per NMV – Scrub Corpo 450gr",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:06:17Z",
+            "update_time": "2025-06-13T14:06:17Z"
+        },
+        {
+            "id": "181",
+            "name": "NMV – Scrub Viso",
+            "description": "Tag per NMV – Scrub Viso",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:06:30Z",
+            "update_time": "2025-06-13T14:06:30Z"
+        },
+        {
+            "id": "183",
+            "name": "NMV – Fiala Anti Imperfezioni",
+            "description": "Tag per NMV – Fiala Anti Imperfezioni",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:06:52Z",
+            "update_time": "2025-06-13T14:06:52Z"
+        },
+        {
+            "id": "185",
+            "name": "NMV – Fiala Idratante",
+            "description": "Tag per NMV – Fiala Idratante",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:07:11Z",
+            "update_time": "2025-06-13T14:07:11Z"
+        },
+        {
+            "id": "187",
+            "name": "NMV – Fluido Anti Aging",
+            "description": "Tag per NMV – Fluido Anti Aging",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:07:57Z",
+            "update_time": "2025-06-13T14:07:57Z"
+        },
+        {
+            "id": "189",
+            "name": "NMV – Fluido Rassodante DMAE",
+            "description": "Tag per NMV – Fluido Rassodante DMAE",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:08:10Z",
+            "update_time": "2025-06-13T14:08:10Z"
+        },
+        {
+            "id": "191",
+            "name": "NMV – Fluido Anti Imperfezioni",
+            "description": "Tag per NMV – Fluido Anti Imperfezioni",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:08:24Z",
+            "update_time": "2025-06-13T14:08:24Z"
+        },
+        {
+            "id": "193",
+            "name": "NMV – Fluido Vitamita C",
+            "description": "Tag per NMV – Fluido Vitamita C",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:08:35Z",
+            "update_time": "2025-06-13T14:08:35Z"
+        },
+        {
+            "id": "195",
+            "name": "NMV – Fluido Vitamina C 475ml",
+            "description": "Tag per NMV – Fluido Vitamina C 475ml",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:08:45Z",
+            "update_time": "2025-06-13T14:08:45Z"
+        },
+        {
+            "id": "197",
+            "name": "NMV – Gel Cabina",
+            "description": "Tag per NMV – Gel Cabina",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:08:58Z",
+            "update_time": "2025-06-13T14:08:58Z"
+        },
+        {
+            "id": "199",
+            "name": "NMV – Maschera idratante",
+            "description": "Tag per NMV – Maschera idratante",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:09:04Z",
+            "update_time": "2025-06-13T14:09:04Z"
+        },
+        {
+            "id": "201",
+            "name": "NMV – Maschera Aloe Vera",
+            "description": "Tag per NMV – Maschera Aloe Vera",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:09:16Z",
+            "update_time": "2025-06-13T14:09:16Z"
+        },
+        {
+            "id": "203",
+            "name": "NMV – Maschera Anti Imperfezioni",
+            "description": "Tag per NMV – Maschera Anti Imperfezioni",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:09:26Z",
+            "update_time": "2025-06-13T14:09:26Z"
+        },
+        {
+            "id": "205",
+            "name": "NMV – Maschera DMAE",
+            "description": "Tag per NMV – Maschera DMAE",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:09:34Z",
+            "update_time": "2025-06-13T14:09:34Z"
+        },
+        {
+            "id": "207",
+            "name": "NMV – Maschera Vitamina C",
+            "description": "Tag per NMV Maschera Vitamina C",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2026-01-06T15:09:45Z",
+            "update_time": "2025-07-24T11:39:24Z"
+        },
+        {
+            "id": "209",
+            "name": "NMV – Pack Duo 100ml",
+            "description": "Tag per NMV – Pack Duo 100ml",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:09:57Z",
+            "update_time": "2025-06-13T14:09:57Z"
+        },
+        {
+            "id": "211",
+            "name": "NMV – Pack Duo 237ml",
+            "description": "Tag per NMV – Pack Duo 237ml",
+            "category": {
+                "id": "25"
+            },
+            "create_time": "2025-06-13T14:10:04Z",
+            "update_time": "2025-06-13T14:10:04Z"
+        },
+        {
+            "id": "213",
+            "name": "ProSkin Basic",
+            "description": "Tag per ProSkin Basic",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:35Z",
+            "update_time": "2025-06-13T14:54:35Z"
+        },
+        {
+            "id": "215",
+            "name": "ProSkin Relax",
+            "description": "Tag per ProSkin Relax",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:35Z",
+            "update_time": "2025-06-13T14:54:35Z"
+        },
+        {
+            "id": "217",
+            "name": "ProSkin Complete",
+            "description": "Tag per ProSkin Complete",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:36Z",
+            "update_time": "2025-06-13T14:54:36Z"
+        },
+        {
+            "id": "219",
+            "name": "ProSkin Soft",
+            "description": "Tag per ProSkin Soft",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:36Z",
+            "update_time": "2025-06-13T14:54:36Z"
+        },
+        {
+            "id": "221",
+            "name": "Dorso",
+            "description": "Tag per Dorso",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:36Z",
+            "update_time": "2025-06-13T14:54:36Z"
+        },
+        {
+            "id": "223",
+            "name": "Glutei",
+            "description": "Tag per Glutei",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:37Z",
+            "update_time": "2025-06-13T14:54:37Z"
+        },
+        {
+            "id": "225",
+            "name": "Inguine",
+            "description": "Tag per Inguine",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:37Z",
+            "update_time": "2025-06-13T14:54:37Z"
+        },
+        {
+            "id": "227",
+            "name": "Gambe",
+            "description": "Tag per Gambe",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:38Z",
+            "update_time": "2025-06-13T14:54:38Z"
+        },
+        {
+            "id": "229",
+            "name": "Linea Alba",
+            "description": "Tag per Linea Alba",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:38Z",
+            "update_time": "2025-06-13T14:54:38Z"
+        },
+        {
+            "id": "231",
+            "name": "Orecchie",
+            "description": "Tag per Orecchie",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:38Z",
+            "update_time": "2025-06-13T14:54:38Z"
+        },
+        {
+            "id": "233",
+            "name": "Mani",
+            "description": "Tag per Mani",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:39Z",
+            "update_time": "2025-06-13T14:54:39Z"
+        },
+        {
+            "id": "235",
+            "name": "Lombare",
+            "description": "Tag per Lombare",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:39Z",
+            "update_time": "2025-06-13T14:54:39Z"
+        },
+        {
+            "id": "237",
+            "name": "Consulenza",
+            "description": "Tag per Consulenza",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:39Z",
+            "update_time": "2025-06-13T14:54:39Z"
+        },
+        {
+            "id": "239",
+            "name": "Altro",
+            "description": "Tag per Altro",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:40Z",
+            "update_time": "2025-06-13T14:54:40Z"
+        },
+        {
+            "id": "241",
+            "name": "Labbro Superiore",
+            "description": "Tag per Labbro Superiore",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:40Z",
+            "update_time": "2025-06-13T14:54:40Z"
+        },
+        {
+            "id": "243",
+            "name": "Mento",
+            "description": "Tag per Mento",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:41Z",
+            "update_time": "2025-06-13T14:54:41Z"
+        },
+        {
+            "id": "245",
+            "name": "Spalle",
+            "description": "Tag per Spalle",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:41Z",
+            "update_time": "2025-06-13T14:54:41Z"
+        },
+        {
+            "id": "247",
+            "name": "Piedi",
+            "description": "Tag per Piedi",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:41Z",
+            "update_time": "2025-06-13T14:54:41Z"
+        },
+        {
+            "id": "249",
+            "name": "Petto",
+            "description": "Tag per Petto",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:42Z",
+            "update_time": "2025-06-13T14:54:42Z"
+        },
+        {
+            "id": "251",
+            "name": "Perianale",
+            "description": "Tag per Perianale",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:42Z",
+            "update_time": "2025-06-13T14:54:42Z"
+        },
+        {
+            "id": "253",
+            "name": "Addome",
+            "description": "Tag per Addome",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:43Z",
+            "update_time": "2025-06-13T14:54:43Z"
+        },
+        {
+            "id": "255",
+            "name": "Ascelle",
+            "description": "Tag per Ascelle",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:43Z",
+            "update_time": "2025-06-13T14:54:43Z"
+        },
+        {
+            "id": "257",
+            "name": "Aureola del Seno",
+            "description": "Tag per Aureola del Seno",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:43Z",
+            "update_time": "2025-06-13T14:54:43Z"
+        },
+        {
+            "id": "259",
+            "name": "Collo Anteriore",
+            "description": "Tag per Collo Anteriore",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:44Z",
+            "update_time": "2025-06-13T14:54:44Z"
+        },
+        {
+            "id": "261",
+            "name": "Braccia",
+            "description": "Tag per Braccia",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:44Z",
+            "update_time": "2025-06-13T14:54:44Z"
+        },
+        {
+            "id": "263",
+            "name": "Collo Posteriore",
+            "description": "Tag per Collo Posteriore",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:45Z",
+            "update_time": "2025-06-13T14:54:45Z"
+        },
+        {
+            "id": "265",
+            "name": "Viso",
+            "description": "Tag per Viso",
+            "category": {
+                "id": "27"
+            },
+            "create_time": "2025-06-13T14:54:45Z",
+            "update_time": "2025-06-13T14:54:45Z"
+        },
+        {
+            "id": "267",
+            "name": "Intimo Plus",
+            "description": "Tag per Intimo Plus",
+            "category": {
+                "id": "29"
+            },
+            "create_time": "2025-06-13T14:57:35Z",
+            "update_time": "2025-06-13T14:57:35Z"
+        },
+        {
+            "id": "269",
+            "name": "Estate 2025",
+            "description": "Tag per Estate 2025",
+            "category": {
+                "id": "29"
+            },
+            "create_time": "2025-06-13T14:57:36Z",
+            "update_time": "2025-06-13T14:57:36Z"
+        },
+        {
+            "id": "271",
+            "name": "ProSkin Soft 13€",
+            "description": "Tag per ProSkin Soft 13€",
+            "category": {
+                "id": "29"
+            },
+            "create_time": "2025-06-13T14:57:36Z",
+            "update_time": "2025-06-13T14:57:36Z"
+        },
+        {
+            "id": "273",
+            "name": "ProSkin For All",
+            "description": "Tag per ProSkin For All",
+            "category": {
+                "id": "29"
+            },
+            "create_time": "2025-06-13T14:57:37Z",
+            "update_time": "2025-06-13T14:57:37Z"
+        },
+        {
+            "id": "275",
+            "name": "Promo Sportivi",
+            "description": "Tag per Promo Sportivi",
+            "category": {
+                "id": "29"
+            },
+            "create_time": "2025-06-13T14:57:37Z",
+            "update_time": "2025-06-13T14:57:37Z"
+        },
+        {
+            "id": "277",
+            "name": "Festa della donna",
+            "description": "Tag per Festa della donna",
+            "category": {
+                "id": "29"
+            },
+            "create_time": "2025-06-13T14:57:37Z",
+            "update_time": "2025-06-13T14:57:37Z"
+        },
+        {
+            "id": "279",
+            "name": "Experience 5",
+            "description": "Tag per Experience 5",
+            "category": {
+                "id": "29"
+            },
+            "create_time": "2025-06-13T14:57:38Z",
+            "update_time": "2025-06-13T14:57:38Z"
+        },
+        {
+            "id": "281",
+            "name": "Experience 7",
+            "description": "Tag per Experience 7",
+            "category": {
+                "id": "29"
+            },
+            "create_time": "2025-06-13T14:57:38Z",
+            "update_time": "2025-06-13T14:57:38Z"
+        },
+        {
+            "id": "283",
+            "name": "Experience 9",
+            "description": "Tag per Experience 9",
+            "category": {
+                "id": "29"
+            },
+            "create_time": "2025-06-13T14:57:39Z",
+            "update_time": "2025-06-13T14:57:39Z"
+        },
+        {
+            "id": "285",
+            "name": "AT – NMV – Appuntamenti – Appuntamento 1",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-06-06T10:26:13Z",
+            "update_time": "2025-07-24T11:54:16Z"
+        },
+        {
+            "id": "287",
+            "name": "AT – NMV – Appuntamenti – Appuntamento 2",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-06-06T10:26:35Z",
+            "update_time": "2025-07-24T11:53:42Z"
+        },
+        {
+            "id": "289",
+            "name": "AT – NMV – Appuntamenti – Appuntamento 3",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-06-06T10:26:55Z",
+            "update_time": "2025-07-24T11:53:20Z"
+        },
+        {
+            "id": "291",
+            "name": "AT – NMV – Appuntamenti – A1: Annullato",
+            "description": "A1: Annullato",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-06-06T12:42:42Z",
+            "update_time": "2025-07-24T11:52:36Z"
+        },
+        {
+            "id": "293",
+            "name": "AT – NMV – Appuntamento – A2: Annullato",
+            "description": "A2: Annullato",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-06-06T12:58:57Z",
+            "update_time": "2025-07-24T11:52:03Z"
+        },
+        {
+            "id": "295",
+            "name": "AT – NMV – Appuntamenti – A3: Annullato",
+            "description": "A3: Annullato",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-06-06T12:59:37Z",
+            "update_time": "2025-07-24T11:51:14Z"
+        },
+        {
+            "id": "297",
+            "name": "AT – NMV – Recensione – Start",
+            "description": "Start–Recensione",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-07-06T15:13:53Z",
+            "update_time": "2025-07-24T12:01:02Z"
+        },
+        {
+            "id": "299",
+            "name": "AT – NMV –  Appuntamenti – A1: Rinviato",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2027-01-06T11:07:53Z",
+            "update_time": "2025-07-24T11:50:43Z"
+        },
+        {
+            "id": "301",
+            "name": "AT – NMV – Appuntamenti – A2: Rinviato",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2027-01-06T11:07:53Z",
+            "update_time": "2025-07-24T11:50:13Z"
+        },
+        {
+            "id": "303",
+            "name": "AT – NMV – Appuntamenti – A3: Rinviato",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2027-01-06T11:07:53Z",
+            "update_time": "2025-07-24T11:49:43Z"
+        },
+        {
+            "id": "305",
+            "name": "AT – NMV – Opportunity – Closed Opportunity",
+            "description": "OAT – NMV – Closed Opportunity",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2027-02-06T12:46:47Z",
+            "update_time": "2025-07-24T12:00:14Z"
+        },
+        {
+            "id": "307",
+            "name": "AT – NMV – Appuntamenti –  A1: Fusion",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-01-07T13:18:06Z",
+            "update_time": "2025-07-24T11:49:13Z"
+        },
+        {
+            "id": "309",
+            "name": "AT – NMV – Appuntamenti – A1: ProSkin",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-07-01T12:18:06Z",
+            "update_time": "2025-07-24T11:48:37Z"
+        },
+        {
+            "id": "311",
+            "name": "AT – NMV – Appuntamenti – A2: Fusion",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-07-01T12:31:59Z",
+            "update_time": "2025-07-24T11:48:18Z"
+        },
+        {
+            "id": "313",
+            "name": "AT – NMV – Appuntamenti – A2: ProSkin",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-07-01T12:31:59Z",
+            "update_time": "2025-07-24T11:47:56Z"
+        },
+        {
+            "id": "315",
+            "name": "AT – NMV – Appuntamenti – A3: Fusion",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-01-07T13:31:59Z",
+            "update_time": "2025-07-24T11:47:31Z"
+        },
+        {
+            "id": "317",
+            "name": "AT – NMV – Appuntamenti – A3: ProSkin",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-07-01T12:35:01Z",
+            "update_time": "2025-07-24T11:46:57Z"
+        },
+        {
+            "id": "319",
+            "name": "NMV – 5 viso 125 € (interna)",
+            "description": "",
+            "category": {
+                "id": "29"
+            },
+            "create_time": "2025-04-07T15:16:06Z",
+            "update_time": "2025-07-04T15:16:22Z"
+        },
+        {
+            "id": "321",
+            "name": "Sun & Safe",
+            "description": "",
+            "category": {
+                "id": "29"
+            },
+            "create_time": "2025-07-04T15:17:41Z",
+            "update_time": "2025-07-04T15:17:41Z"
+        },
+        {
+            "id": "323",
+            "name": "Perianale 77€",
+            "description": "",
+            "category": {
+                "id": "29"
+            },
+            "create_time": "2025-07-04T15:43:00Z",
+            "update_time": "2025-07-04T15:43:00Z"
+        },
+        {
+            "id": "325",
+            "name": "A->A – MYVEG – Metamorfosi Botanica – Iscritto",
+            "description": "Auto-created Tue Jul 22 11:24:28 EDT 2025",
+            "category": {
+                "id": "35"
+            },
+            "create_time": "2026-10-07T15:24:28Z",
+            "update_time": "2025-07-24T12:02:41Z"
+        },
+        {
+            "id": "329",
+            "name": "A – NMV – Referral – LadingPageView",
+            "description": "",
+            "category": {
+                "id": "15"
+            },
+            "create_time": "2025-07-24T11:57:30Z",
+            "update_time": "2025-07-24T11:57:30Z"
+        },
+        {
+            "id": "331",
+            "name": "A – NMV – Referral – Aderito",
+            "description": "",
+            "category": {
+                "id": "15"
+            },
+            "create_time": "2025-07-24T11:59:43Z",
+            "update_time": "2025-07-24T11:59:43Z"
+        },
+        {
+            "id": "333",
+            "name": "AT – NMV – Referral – Nuovo Contatto Presentato",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-12-07T13:10:49Z",
+            "update_time": "2025-08-27T09:55:46Z"
+        },
+        {
+            "id": "335",
+            "name": "S – NMV – Referral – Contatto Referral",
+            "description": "",
+            "category": {
+                "id": "13"
+            },
+            "create_time": "2027-01-07T16:28:11Z",
+            "update_time": "2025-07-25T15:29:17Z"
+        },
+        {
+            "id": "337",
+            "name": "A – NMV – Referral – Buono Referral Usato",
+            "description": "",
+            "category": null,
+            "create_time": "2025-07-28T10:50:20Z",
+            "update_time": "2025-07-28T10:50:20Z"
+        },
+        {
+            "id": "339",
+            "name": "AT – NMV – Temperatura Referral – Inizio",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2027-04-07T11:17:37Z",
+            "update_time": "2025-07-28T11:20:37Z"
+        },
+        {
+            "id": "341",
+            "name": "AT – NMV – Temperatura Referral – Caldo",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-07-28T11:19:16Z",
+            "update_time": "2025-07-28T11:19:16Z"
+        },
+        {
+            "id": "343",
+            "name": "AT – NMV – Temperatura Referral – Tiepido",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-07-28T11:20:00Z",
+            "update_time": "2025-07-28T11:20:00Z"
+        },
+        {
+            "id": "345",
+            "name": "AT – NMV – Temperatura Referral – Freddo",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-07-28T11:20:21Z",
+            "update_time": "2025-07-28T11:20:21Z"
+        },
+        {
+            "id": "347",
+            "name": "S – NMV – Bassa Frequenza Messaggi",
+            "description": "Auto-created Wed Aug 06 05:21:47 EDT 2025",
+            "category": {
+                "id": "13"
+            },
+            "create_time": "2025-08-06T09:21:48Z",
+            "update_time": "2025-08-06T09:21:48Z"
+        },
+        {
+            "id": "349",
+            "name": "AT – NMV – Referral – (No PACCO) Inizio Richiesta 
+Referral",
+            "description": "Auto-created Thu Aug 07 06:04:52 EDT 2025",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-08-07T10:04:52Z",
+            "update_time": "2025-08-07T10:04:52Z"
+        },
+        {
+            "id": "351",
+            "name": "AT – Referral – Richiesto Messaggio Presentazione",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-08-07T15:16:36Z",
+            "update_time": "2025-08-07T15:16:36Z"
+        },
+        {
+            "id": "353",
+            "name": "AT – NMV – Feedback – Feedback lasciato",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-08-25T13:20:30Z",
+            "update_time": "2025-08-25T13:20:30Z"
+        },
+        {
+            "id": "355",
+            "name": "AT – NMV – Referral – Referree entrato",
+            "description": "",
+            "category": null,
+            "create_time": "2027-03-08T10:53:50Z",
+            "update_time": "2025-08-27T09:54:57Z"
+        },
+        {
+            "id": "357",
+            "name": "AT – NMV – Referral – Pacco Ricevuto",
+            "description": "Auto-created Wed Aug 27 06:53:55 EDT 2025",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-08-27T10:53:56Z",
+            "update_time": "2025-08-27T10:53:56Z"
+        },
+        {
+            "id": "359",
+            "name": "AT – NMV – Rinvia senza messaggio",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-10-07T12:13:35Z",
+            "update_time": "2025-10-07T12:13:35Z"
+        },
+        {
+            "id": "361",
+            "name": "AT – NMV – Acquisizione – Nuovo Lead",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-10-10T11:03:56Z",
+            "update_time": "2025-10-10T11:05:24Z"
+        },
+        {
+            "id": "363",
+            "name": "AT – NMV – Temperatura Rinvii – Inizio",
+            "description": "Auto-created Mon Nov 10 09:04:15 EST 2025",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-11-10T14:04:15Z",
+            "update_time": "2025-11-10T14:04:15Z"
+        },
+        {
+            "id": "365",
+            "name": "AT – NMV – Appuntamenti – Appuntamento 4",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-03-12T09:18:06Z",
+            "update_time": "2025-12-03T10:18:55Z"
+        },
+        {
+            "id": "367",
+            "name": "AT – NMV – Appuntamenti – A4: Fusion",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-12-03T10:20:17Z",
+            "update_time": "2025-12-03T10:20:17Z"
+        },
+        {
+            "id": "369",
+            "name": "AT – NMV – Appuntamenti – A4: ProSkin",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-12-03T10:20:17Z",
+            "update_time": "2025-12-03T10:20:17Z"
+        },
+        {
+            "id": "371",
+            "name": "AT – NMV – Appuntamenti – A4: Annullato",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-12-03T10:20:17Z",
+            "update_time": "2025-12-03T10:20:17Z"
+        },
+        {
+            "id": "373",
+            "name": "AT – NMV – Appuntamenti – A4: Rinviato",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2025-12-03T10:20:17Z",
+            "update_time": "2025-12-03T10:20:17Z"
+        },
+        {
+            "id": "375",
+            "name": "NMV – Appuntamenti – Appuntamento 5",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-01-08T13:30:45Z",
+            "update_time": "2026-01-08T13:30:45Z"
+        },
+        {
+            "id": "377",
+            "name": "NMV – Appuntamenti – A5: Fusion",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-01-08T13:30:45Z",
+            "update_time": "2026-01-08T13:30:45Z"
+        },
+        {
+            "id": "379",
+            "name": "NMV – Appuntamenti – A5: ProSkin",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-01-08T13:30:45Z",
+            "update_time": "2026-01-08T13:30:45Z"
+        },
+        {
+            "id": "381",
+            "name": "NMV – Appuntamenti – A5: Rinviato",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-01-08T13:30:45Z",
+            "update_time": "2026-01-08T13:30:45Z"
+        },
+        {
+            "id": "383",
+            "name": "NMV – Appuntamenti – A5: Annullato",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-01-08T13:30:45Z",
+            "update_time": "2026-01-08T13:30:45Z"
+        },
+        {
+            "id": "385",
+            "name": "S – NMV – Promo – Puntuale e premiata",
+            "description": "",
+            "category": {
+                "id": "13"
+            },
+            "create_time": "2027-08-01T11:32:35Z",
+            "update_time": "2026-01-20T12:32:54Z"
+        },
+        {
+            "id": "387",
+            "name": "AT – NMV – Start Puntuale a premiata",
+            "description": "",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-01-20T13:09:59Z",
+            "update_time": "2026-01-20T13:09:59Z"
+        },
+        {
+            "id": "389",
+            "name": "1/23/2026 10:19 AM",
+            "description": "Auto-created Fri Jan 23 10:19:17 EST 2026",
+            "category": {
+                "id": "37"
+            },
+            "create_time": "2026-01-23T15:19:17Z",
+            "update_time": "2026-01-23T15:19:17Z"
+        },
+        {
+            "id": "391",
+            "name": "1/23/2026 11:20 AM",
+            "description": "Auto-created Fri Jan 23 11:20:06 EST 2026",
+            "category": {
+                "id": "37"
+            },
+            "create_time": "2026-01-23T16:20:07Z",
+            "update_time": "2026-01-23T16:20:07Z"
+        },
+        {
+            "id": "393",
+            "name": "1/23/2026 11:32 AM",
+            "description": "Auto-created Fri Jan 23 11:32:30 EST 2026",
+            "category": {
+                "id": "19"
+            },
+            "create_time": "2026-01-23T16:32:30Z",
+            "update_time": "2026-01-23T16:32:30Z"
+        },
+        {
+            "id": "395",
+            "name": "2/03/2026 6:51 AM",
+            "description": "Auto-created Tue Feb 03 06:51:40 EST 2026",
+            "category": {
+                "id": "19"
+            },
+            "create_time": "2026-02-03T11:51:41Z",
+            "update_time": "2026-02-03T11:51:41Z"
+        },
+        {
+            "id": "397",
+            "name": "2/03/2026 8:34 AM",
+            "description": "Auto-created Tue Feb 03 08:34:06 EST 2026",
+            "category": {
+                "id": "37"
+            },
+            "create_time": "2026-02-03T13:34:07Z",
+            "update_time": "2026-02-03T13:34:07Z"
+        },
+        {
+            "id": "399",
+            "name": "AT – NMV – Compleanno",
+            "description": "Auto-created Tue Feb 10 04:24:19 EST 2026",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-02-10T09:24:19Z",
+            "update_time": "2026-02-10T09:24:19Z"
+        },
+        {
+            "id": "401",
+            "name": "A – NMV – Regalo riscattato",
+            "description": "Auto-created Tue Feb 10 12:07:51 EST 2026",
+            "category": {
+                "id": "15"
+            },
+            "create_time": "2026-02-10T17:07:52Z",
+            "update_time": "2026-02-10T17:07:52Z"
+        },
+        {
+            "id": "403",
+            "name": "2/11/2026 11:10 AM",
+            "description": "Auto-created Wed Feb 11 11:10:34 EST 2026",
+            "category": {
+                "id": "19"
+            },
+            "create_time": "2026-02-11T16:10:35Z",
+            "update_time": "2026-02-11T16:10:35Z"
+        },
+        {
+            "id": "405",
+            "name": "2/11/2026 11:12 AM",
+            "description": "Auto-created Wed Feb 11 11:12:09 EST 2026",
+            "category": {
+                "id": "37"
+            },
+            "create_time": "2026-02-11T16:12:09Z",
+            "update_time": "2026-02-11T16:12:09Z"
+        },
+        {
+            "id": "407",
+            "name": "2/12/2026 8:11 AM",
+            "description": "Auto-created Thu Feb 12 08:11:01 EST 2026",
+            "category": {
+                "id": "37"
+            },
+            "create_time": "2026-02-12T13:11:01Z",
+            "update_time": "2026-02-12T13:11:01Z"
+        },
+        {
+            "id": "409",
+            "name": "2/12/2026 8:15 AM",
+            "description": "Auto-created Thu Feb 12 08:15:56 EST 2026",
+            "category": {
+                "id": "19"
+            },
+            "create_time": "2026-02-12T13:15:56Z",
+            "update_time": "2026-02-12T13:15:56Z"
+        },
+        {
+            "id": "411",
+            "name": "2/12/2026 11:40 AM",
+            "description": "Auto-created Thu Feb 12 11:40:43 EST 2026",
+            "category": {
+                "id": "37"
+            },
+            "create_time": "2026-02-12T16:40:43Z",
+            "update_time": "2026-02-12T16:40:43Z"
+        },
+        {
+            "id": "413",
+            "name": "2/12/2026 11:44 AM",
+            "description": "Auto-created Thu Feb 12 11:44:20 EST 2026",
+            "category": {
+                "id": "19"
+            },
+            "create_time": "2026-02-12T16:44:20Z",
+            "update_time": "2026-02-12T16:44:20Z"
+        },
+        {
+            "id": "415",
+            "name": "S – NMV – Temperatura Rinvii –  Freddo",
+            "description": "Auto-created Fri Mar 06 00:19:45 EST 2026",
+            "category": {
+                "id": "11"
+            },
+            "create_time": "2026-03-06T05:19:46Z",
+            "update_time": "2026-03-06T05:19:46Z"
+        },
+        {
+            "id": "417",
+            "name": "S – NMV – Temperatura Rinvii – Tiepido",
+            "description": "Auto-created Fri Mar 06 00:20:42 EST 2026",
+            "category": {
+                "id": "13"
+            },
+            "create_time": "2026-03-06T05:20:42Z",
+            "update_time": "2026-03-06T05:20:42Z"
+        },
+        {
+            "id": "419",
+            "name": "S – NMV – Temperatura Rinvii – Caldo",
+            "description": "Auto-created Fri Mar 06 00:21:43 EST 2026",
+            "category": {
+                "id": "13"
+            },
+            "create_time": "2026-03-06T05:21:44Z",
+            "update_time": "2026-03-06T05:21:44Z"
+        },
+        {
+            "id": "421",
+            "name": "S – NMV – Rinvio x1",
+            "description": "Auto-created Fri Mar 06 05:36:49 EST 2026",
+            "category": {
+                "id": "13"
+            },
+            "create_time": "2026-03-06T10:36:50Z",
+            "update_time": "2026-03-06T10:36:50Z"
+        }
+    ],
+    "next_page_token": ""
+}
