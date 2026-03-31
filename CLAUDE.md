@@ -25,7 +25,10 @@ franchising No Mas Vello. Il sistema e' composto da tre parti integrate:
 Ogni tipo di risorsa ha una fonte di verita' precisa. Usa SEMPRE la fonte
 corretta per ogni tipo di operazione. Non mescolare mai le fonti.
 
-### Documentazione e script -> repo locale (DocumentazionePrebooking)
+### Documentazione e script -> repo GitHub (DocumentazionePrebooking)
+
+**URL repo:** `https://github.com/givibeautysrls-tech/DocumentazionePrebooking`
+**Branch principale:** `main`
 
 Questa repo e' la fonte di verita' per:
 - `/docs` -> documentazione tecnica completa del sistema (Cloudflare,
@@ -45,9 +48,13 @@ Questa repo e' la fonte di verita' per:
 /keap-backup      -> IGNORARE
 ```
 
-Tutte le operazioni su questi file — lettura, modifica, commit — avvengono
-direttamente sulla repo locale. Non usare server MCP per operazioni
-su file di questa repo.
+**Lettura dei file:** avviene direttamente tramite il collegamento nativo
+alla repo in Claude Code.
+
+**Scrittura e commit:** il collegamento nativo e' in sola lettura.
+Tutte le modifiche ai file (documentazione, script, changelog) devono
+essere committate e pushate tramite il server MCP GitHub.
+Non usare git da riga di comando per operazioni su questa repo.
 
 ### Codice Worker Cloudflare -> MCP Cloudflare
 
@@ -175,7 +182,7 @@ coinvolge i worker Cloudflare.
      a questa modifica (es. nuovi campi Airtable, nuove automazioni
      Keap), in modo che la documentazione rifletta lo stato reale
      completo del sistema
-   Committa le modifiche su main.
+   Committa e pusha le modifiche su main tramite MCP GitHub.
 
 5. **Changelog**
    Crea o aggiorna il file di log in `/changelogs`.
@@ -207,7 +214,7 @@ di questa operazione, se presenti]
 
 ---
 
-Committa il changelog su main.
+Committa e pusha il changelog su main tramite MCP GitHub.
 
 ---
 
@@ -259,7 +266,7 @@ essere saltato. Esistono due sotto-processi distinti.
 
 4. **Aggiornamento script-backup**
    Aggiorna il file corrispondente in `/script-backup` con il nuovo
-   codice prodotto e committa su main.
+   codice prodotto e committa e pusha su main tramite MCP GitHub.
 
 5. **Aggiornamento documentazione**
    Aggiorna i file rilevanti in `/docs` riportando:
@@ -267,11 +274,11 @@ essere saltato. Esistono due sotto-processi distinti.
    - L'impatto sugli altri sistemi collegati
    - Le azioni esterne gia' applicate dall'utente collegate a questa
      modifica
-   Committa su main.
+   Committa e pusha su main tramite MCP GitHub.
 
 6. **Changelog**
    Crea o aggiorna il file di log in `/changelogs` con questo formato
-   e committa su main:
+   e committa e pusha su main tramite MCP GitHub:
 
 ---
 #### [data e ora] — [titolo breve della modifica]
@@ -368,7 +375,7 @@ altra operazione.
 
 4. **Inserimento nuovo script in script-backup**
    Crea il nuovo file in `/script-backup` con il codice prodotto
-   e committa su main.
+   e committa e pusha su main tramite MCP GitHub.
 
 5. **Aggiornamento documentazione**
    Aggiorna i file rilevanti in `/docs` riportando:
@@ -378,11 +385,11 @@ altra operazione.
      manualmente dall'utente)
    - Come si attiva (pulsante, automatico, ecc.)
    - Dipendenze da altri componenti del sistema
-   Committa su main.
+   Committa e pusha su main tramite MCP GitHub.
 
 6. **Changelog**
    Crea o aggiorna il file di log in `/changelogs` con questo formato
-   e committa su main:
+   e committa e pusha su main tramite MCP GitHub:
 
 ---
 #### [data e ora] — [titolo breve]
@@ -435,7 +442,7 @@ modifiche fatte su Keap, Claude Code deve:
    - Qualsiasi altra modifica operativa su Keap indicata nel sommario
    La documentazione deve spiegare non solo cosa e' cambiato, ma anche
    perche' e quale impatto ha sugli altri sistemi (Airtable, worker).
-   Committa su main.
+   Committa e pusha su main tramite MCP GitHub.
 
 2. Includere le modifiche Keap nel changelog in `/changelogs`,
    aggiungendo questa sezione al formato gia' definito,
