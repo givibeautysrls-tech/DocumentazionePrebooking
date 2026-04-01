@@ -5,6 +5,94 @@ Leggi tutto prima di eseguire qualsiasi operazione.
 
 ---
 
+## PRIMO AVVIO — Leggi questo se e' la prima volta che apri il progetto
+
+Se stai avviando questo progetto per la prima volta su un nuovo dispositivo,
+segui questa procedura nell'ordine esatto prima di fare qualsiasi altra cosa.
+
+### 1. Configura le variabili d'ambiente
+
+Crea un file `.env` nella root del progetto con questo contenuto,
+sostituendo i placeholder con i token reali:
+
+```
+CLOUDFLARE_API_TOKEN=inserisci_il_token_cloudflare
+AIRTABLE_API_TOKEN=inserisci_il_token_airtable
+GITHUB_PAT=inserisci_il_personal_access_token_github
+GITHUB_REPO=givibeautysrls-tech/DocumentazionePrebooking
+GITHUB_BRANCH=main
+```
+
+Il file `.env` e' nel `.gitignore` — non viene mai committato sulla repo.
+
+### 2. Configura i server MCP
+
+Aggiorna il file `~/.claude.json` (nella cartella utente, non nel
+progetto) aggiungendo nella sezione `mcpServers` del progetto questa
+configurazione, sostituendo i placeholder con i token reali:
+
+```json
+"mcpServers": {
+  "cloudflare": {
+    "type": "http",
+    "url": "https://mcp.cloudflare.com/mcp",
+    "headers": {
+      "Authorization": "Bearer CLOUDFLARE_API_TOKEN"
+    }
+  },
+  "airtable": {
+    "type": "http",
+    "url": "https://mcp.airtable.com/mcp",
+    "headers": {
+      "Authorization": "Bearer AIRTABLE_API_TOKEN"
+    }
+  },
+  "github": {
+    "type": "http",
+    "url": "https://api.githubcopilot.com/mcp",
+    "headers": {
+      "Authorization": "Bearer GITHUB_PAT"
+    }
+  }
+}
+```
+
+Posizione del file per sistema operativo:
+- Windows: `%USERPROFILE%\.claude.json`
+- macOS / Linux: `~/.claude.json`
+
+### 3. Verifica i server MCP
+
+Dopo aver salvato la configurazione, riavvia Claude Code e verifica
+che i server siano attivi eseguendo `/mcp` nella chat. Dovresti vedere
+cloudflare, airtable e github con stato connesso.
+
+Se uno o piu' server non risultano connessi, usa il fallback API
+descritto piu' avanti in questo file.
+
+### 4. Sincronizza il repo locale
+
+Assicurati di avere l'ultima versione del progetto:
+
+```
+git pull origin main
+```
+
+---
+
+## INIZIO DI OGNI SESSIONE
+
+Prima di qualsiasi operazione, assicurati che il repo locale sia
+aggiornato con l'ultima versione remota:
+
+```
+git pull origin main
+```
+
+Se ci sono conflitti, segnalali all'utente prima di procedere.
+
+---
+
 ## Descrizione del sistema
 
 Questo progetto gestisce gli appuntamenti per i centri epilazione del
@@ -54,14 +142,99 @@ alla repo in Claude Code.
 **Scrittura e commit:** il collegamento nativo e' in sola lettura.
 Tutte le modifiche ai file (documentazione, script, changelog) devono
 essere committate e pushate tramite il server MCP GitHub.
-Non usare git da riga di comando per operazioni su questa repo.
+Se MCP GitHub non e' disponibile, usa il fallback API descritto piu'
+avanti in questo file.
 
 ### Codice Worker Cloudflare -> MCP Cloudflare
 
 Il codice dei worker Cloudflare si legge, modifica e deploya
 **esclusivamente tramite il server MCP Cloudflare**.
+Se MCP Cloudflare non e' disponibile, usa il fallback API descritto
+piu' avanti in questo file.
 La cartella `/workers-backup` in questa repo e' solo un backup
 di riferimento — non va mai usata come fonte operativa per i worker.
+
+---
+
+## Fallback API — quando i server MCP non funzionano
+
+Se uno o piu' server MCP non sono disponibili, usa questi metodi
+alternativi basati su chiamate API dirette con `curl`.
+
+Le variabili d'ambiente necessarie sono nel file `.env` locale.
+
+---
+
+### Fallback GitHub — operazioni sul repo
+
+**Leggi un file:**
+```bash
+curl -H "Authorization: Bearer $GITHUB_PAT" \
+  https://api.github.com/repos/$GITHUB_REPO/contents/PERCORSO_FILE
+```
+
+**Crea o aggiorna un file:**
+```bash
+CONTENT=$(echo -n "CONTENUTO_FILE" | base64)
+SHA=$(curl -s -H "Authorization: Bearer $GITHUB_PAT" \
+  https://api.github.com/repos/$GITHUB_REPO/contents/PERCORSO_FILE \
+  | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('sha',''))" 2>/dev/null)
+
+curl -X PUT \
+  -H "Authorization: Bearer $GITHUB_PAT" \
+  -H "Content-Type: application/json" \
+  https://api.github.com/repos/$GITHUB_REPO/contents/PERCORSO_FILE \
+  -d "{
+    \"message\": \"MESSAGGIO_COMMIT\",
+    \"content\": \"$CONTENT\",
+    \"branch\": \"$GITHUB_BRANCH\"
+    $([ -n \"$SHA\" ] && echo ", \"sha\": \"$SHA\"")
+  }"
+```
+
+---
+
+### Fallback Cloudflare — worker
+
+**Elenca i worker:**
+```bash
+curl -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  https://api.cloudflare.com/client/v4/accounts/ACCOUNT_ID/workers/scripts
+```
+
+**Leggi il codice di un worker:**
+```bash
+curl -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  https://api.cloudflare.com/client/v4/accounts/ACCOUNT_ID/workers/scripts/NOME_WORKER
+```
+
+**Deploya un worker:**
+```bash
+curl -X PUT \
+  -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  -H "Content-Type: application/javascript" \
+  https://api.cloudflare.com/client/v4/accounts/ACCOUNT_ID/workers/scripts/NOME_WORKER \
+  --data-binary @percorso/del/file.js
+```
+
+Nota: sostituisci `ACCOUNT_ID` con l'ID del tuo account Cloudflare,
+che trovi nella dashboard sotto "Account ID".
+
+---
+
+### Fallback Airtable — lettura basi
+
+**Elenca le basi:**
+```bash
+curl -H "Authorization: Bearer $AIRTABLE_API_TOKEN" \
+  https://api.airtable.com/v0/meta/bases
+```
+
+**Leggi i record di una tabella:**
+```bash
+curl -H "Authorization: Bearer $AIRTABLE_API_TOKEN" \
+  "https://api.airtable.com/v0/BASE_ID/NOME_TABELLA"
+```
 
 ---
 
@@ -159,6 +332,7 @@ coinvolge i worker Cloudflare.
 1. **Lettura dell'ultima versione**
    Leggi il codice attuale dei worker coinvolti tramite MCP Cloudflare.
    Non usare `/workers-backup` come riferimento operativo.
+   Se MCP non e' disponibile, usa il fallback API Cloudflare.
 
 2. **Modifica del codice**
    Apporta tutte le modifiche necessarie ai worker tramite MCP Cloudflare,
@@ -168,7 +342,8 @@ coinvolge i worker Cloudflare.
    nella Fase 1, fermati e segnala all'utente prima di continuare.
 
 3. **Deploy su Cloudflare**
-   Esegui il deploy di tutti i worker modificati tramite MCP Cloudflare.
+   Esegui il deploy di tutti i worker modificati tramite MCP Cloudflare
+   (o fallback API se MCP non e' disponibile).
    Verifica che ogni deploy sia andato a buon fine prima di procedere
    al successivo.
    Se un deploy fallisce, fermati e segnala il problema in linguaggio
@@ -183,6 +358,7 @@ coinvolge i worker Cloudflare.
      Keap), in modo che la documentazione rifletta lo stato reale
      completo del sistema
    Committa e pusha le modifiche su main tramite MCP GitHub.
+   Se MCP GitHub non e' disponibile, usa il fallback API GitHub.
 
 5. **Changelog**
    Crea o aggiorna il file di log in `/changelogs`.
@@ -215,6 +391,7 @@ di questa operazione, se presenti]
 ---
 
 Committa e pusha il changelog su main tramite MCP GitHub.
+Se MCP GitHub non e' disponibile, usa il fallback API GitHub.
 
 ---
 
@@ -267,6 +444,7 @@ essere saltato. Esistono due sotto-processi distinti.
 4. **Aggiornamento script-backup**
    Aggiorna il file corrispondente in `/script-backup` con il nuovo
    codice prodotto e committa e pusha su main tramite MCP GitHub.
+   Se MCP GitHub non e' disponibile, usa il fallback API GitHub.
 
 5. **Aggiornamento documentazione**
    Aggiorna i file rilevanti in `/docs` riportando:
@@ -275,10 +453,12 @@ essere saltato. Esistono due sotto-processi distinti.
    - Le azioni esterne gia' applicate dall'utente collegate a questa
      modifica
    Committa e pusha su main tramite MCP GitHub.
+   Se MCP GitHub non e' disponibile, usa il fallback API GitHub.
 
 6. **Changelog**
    Crea o aggiorna il file di log in `/changelogs` con questo formato
-   e committa e pusha su main tramite MCP GitHub:
+   e committa e pusha su main tramite MCP GitHub.
+   Se MCP GitHub non e' disponibile, usa il fallback API GitHub.
 
 ---
 #### [data e ora] — [titolo breve della modifica]
@@ -376,6 +556,7 @@ altra operazione.
 4. **Inserimento nuovo script in script-backup**
    Crea il nuovo file in `/script-backup` con il codice prodotto
    e committa e pusha su main tramite MCP GitHub.
+   Se MCP GitHub non e' disponibile, usa il fallback API GitHub.
 
 5. **Aggiornamento documentazione**
    Aggiorna i file rilevanti in `/docs` riportando:
@@ -386,10 +567,12 @@ altra operazione.
    - Come si attiva (pulsante, automatico, ecc.)
    - Dipendenze da altri componenti del sistema
    Committa e pusha su main tramite MCP GitHub.
+   Se MCP GitHub non e' disponibile, usa il fallback API GitHub.
 
 6. **Changelog**
    Crea o aggiorna il file di log in `/changelogs` con questo formato
-   e committa e pusha su main tramite MCP GitHub:
+   e committa e pusha su main tramite MCP GitHub.
+   Se MCP GitHub non e' disponibile, usa il fallback API GitHub.
 
 ---
 #### [data e ora] — [titolo breve]
@@ -443,6 +626,7 @@ modifiche fatte su Keap, Claude Code deve:
    La documentazione deve spiegare non solo cosa e' cambiato, ma anche
    perche' e quale impatto ha sugli altri sistemi (Airtable, worker).
    Committa e pusha su main tramite MCP GitHub.
+   Se MCP GitHub non e' disponibile, usa il fallback API GitHub.
 
 2. Includere le modifiche Keap nel changelog in `/changelogs`,
    aggiungendo questa sezione al formato gia' definito,
@@ -467,10 +651,12 @@ modifiche fatte su Keap, Claude Code deve:
   fanno parte integrante di ogni modifica, non sono opzionali
 - Ogni deploy Cloudflare deve essere verificato prima di passare
   al successivo
+- Se MCP non e' disponibile, usa sempre il fallback API corrispondente
 - La documentazione che produci deve includere sempre: cosa e' cambiato,
   perche', l'impatto sugli altri sistemi, e le azioni esterne collegate.
   Deve essere utile e comprensibile a chi la legge in futuro
 - La cartella `/keap-backup` va ignorata in ogni operazione
+- Non committare mai il file `.env` — contiene credenziali sensibili
 
 ---
 
