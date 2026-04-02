@@ -40,7 +40,7 @@ Worker di **infrastruttura per l'invio e il monitoraggio dei messaggi WhatsApp**
 **Request:**
 ```json
 {
-  "number": "+393331234567",
+  "number": 393331234567,
   "message": "Ciao Mario, il tuo appuntamento e confermato.",
   "instance_id": "67F7E1DA0EF73",
   "access_token": "..."
