@@ -185,9 +185,9 @@ I backup nella directory `workers-backup/` sono copie statiche dei file deployat
 
 ---
 
-## 10. Slot appuntamento limitati a 5
+## 10. Slot appuntamento: limite attuale 10
 
-Il sistema gestisce un massimo di 5 appuntamenti contemporanei per contatto, denominati A1-A5. La configurazione `APPOINTMENT_FIELDS` in `apertura-scheda` definisce esattamente 5 slot:
+Il sistema gestisce un massimo di 10 appuntamenti contemporanei per contatto, denominati A1-A10. La configurazione `APPOINTMENT_FIELDS` in `apertura-scheda` definisce 10 slot (esteso il 2026-05-13):
 
 ```js
 APPOINTMENT_FIELDS: {
@@ -195,17 +195,20 @@ APPOINTMENT_FIELDS: {
   2: { trattamenti: 135, ora: 177, data: 179 },
   3: { trattamenti: 137, ora: 181, data: 187 },
   4: { trattamenti: 219, ora: 221, data: 225 },
-  5: { trattamenti: 227, ora: 229, data: 231 }
+  5: { trattamenti: 227, ora: 229, data: 231 },
+  6: { trattamenti: 241, ora: 243, data: 245 },
+  7: { trattamenti: 247, ora: 249, data: 251 },
+  8: { trattamenti: 253, ora: 255, data: 257 },
+  9: { trattamenti: 259, ora: 261, data: 263 },
+  10: { trattamenti: 265, ora: 267, data: 269 }
 }
 ```
 
-[Confermato da codice]
+[Confermato da codice — aggiornato 2026-05-13]
 
-Allo stesso modo, `APPOINTMENT_TAGS` definisce tag solo per A1-A5. [Confermato da codice]
+Allo stesso modo, `APPOINTMENT_TAGS` definisce tag per A1-A10. I validatori (`validateAnnullaRequest`, `determineAppointmentNumber`, `syncNextAppointment`) accettano ora valori da 1 a 10. [Confermato da codice — aggiornato 2026-05-13]
 
-**Impatto:** Se un cliente ha 5 appuntamenti attivi e ne viene creato un sesto, il worker non trovera' uno slot disponibile. Il comportamento in questo caso non e' documentato e dipende dalla logica di selezione slot del worker. [Confermato da codice]
-
-**Nota:** La validazione in `validateAnnullaRequest` limita esplicitamente `numeroAppuntamento` a 1-4, non a 1-5, suggerendo che A5 potrebbe essere stato aggiunto successivamente senza aggiornare tutti i validatori. [Confermato da codice]
+**Impatto residuo:** Se un cliente ha 10 appuntamenti attivi e ne viene creato un undicesimo, il worker restituira' errore "ha gia' 10 appuntamenti". In scenari normali questo limite non dovrebbe essere raggiunto.
 
 ---
 
@@ -283,7 +286,7 @@ La maggior parte degli endpoint non richiede autenticazione:
 | 6 | Token refresh centralizzato | Alta | Media | Interruzione servizio |
 | 7 | Hardcoded IDs | Media | Media | Errori in manutenzione |
 | 8 | Nessun test | Alta | Alta | Regressioni non rilevate |
-| 10 | Limite 5 slot | Bassa | Bassa | Mancata gestione caso raro |
+| 10 | Limite 10 slot | Bassa | Bassa | Mancata gestione caso molto raro |
 | 11 | XML-RPC deprecation | Alta | Bassa | Interruzione funzionalita' critica |
 | 12 | Log TTL 30gg | Media | Media | Perdita dati audit |
 | 13 | No rate limiting | Alta | Bassa | Abuso API / costi |
