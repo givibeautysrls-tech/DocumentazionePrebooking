@@ -69,6 +69,31 @@ Tag che innescano automazioni. Applicati dai Worker Cloudflare o manualmente.
 | **383** | **NMV – Appuntamenti – A5: Annullato** | Annullamento appuntamento 5 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.CANCEL.A5 | [Confermato da codice] |
 | **387** | **AT – NMV – Start Puntuale a premiata** | Avvia flusso promo puntualita' | **Si** — `puntuale_e_premiata.js` CONFIG.TAG_FOR_PROMO = 387 | [Confermato da codice] |
 | 399 | AT – NMV – Compleanno | Trigger automazione compleanni | No | [Da verificare] |
+| **427** | **NMV – Appuntamenti – Appuntamento 6** | Trigger: nuovo appuntamento slot 6 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.A6 | [Confermato da codice — creato 2026-05-13] |
+| **429** | **NMV – Appuntamenti – A6: Fusion** | Tipo servizio Fusion, slot 6 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.FUSION.A6 | [Confermato da codice — creato 2026-05-13] |
+| **431** | **NMV – Appuntamenti – A6: ProSkin** | Tipo servizio ProSkin, slot 6 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.PROSKIN.A6 | [Confermato da codice — creato 2026-05-13] |
+| **433** | **NMV – Appuntamenti – A6: Annullato** | Annullamento appuntamento 6 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.CANCEL.A6 | [Confermato da codice — creato 2026-05-13] |
+| **435** | **NMV – Appuntamenti – A6: Rinviato** | Rinvio appuntamento 6 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.RINVIO.A6 | [Confermato da codice — creato 2026-05-13] |
+| **437** | **NMV – Appuntamenti – Appuntamento 7** | Trigger: nuovo appuntamento slot 7 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.A7 | [Confermato da codice — creato 2026-05-13] |
+| **439** | **NMV – Appuntamenti – A7: Fusion** | Tipo servizio Fusion, slot 7 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.FUSION.A7 | [Confermato da codice — creato 2026-05-13] |
+| **441** | **NMV – Appuntamenti – A7: ProSkin** | Tipo servizio ProSkin, slot 7 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.PROSKIN.A7 | [Confermato da codice — creato 2026-05-13] |
+| **443** | **NMV – Appuntamenti – A7: Annullato** | Annullamento appuntamento 7 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.CANCEL.A7 | [Confermato da codice — creato 2026-05-13] |
+| **445** | **NMV – Appuntamenti – A7: Rinviato** | Rinvio appuntamento 7 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.RINVIO.A7 | [Confermato da codice — creato 2026-05-13] |
+| **447** | **NMV – Appuntamenti – Appuntamento 8** | Trigger: nuovo appuntamento slot 8 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.A8 | [Confermato da codice — creato 2026-05-13] |
+| **449** | **NMV – Appuntamenti – A8: Fusion** | Tipo servizio Fusion, slot 8 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.FUSION.A8 | [Confermato da codice — creato 2026-05-13] |
+| **451** | **NMV – Appuntamenti – A8: ProSkin** | Tipo servizio ProSkin, slot 8 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.PROSKIN.A8 | [Confermato da codice — creato 2026-05-13] |
+| **453** | **NMV – Appuntamenti – A8: Annullato** | Annullamento appuntamento 8 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.CANCEL.A8 | [Confermato da codice — creato 2026-05-13] |
+| **455** | **NMV – Appuntamenti – A8: Rinviato** | Rinvio appuntamento 8 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.RINVIO.A8 | [Confermato da codice — creato 2026-05-13] |
+| **457** | **NMV – Appuntamenti – Appuntamento 9** | Trigger: nuovo appuntamento slot 9 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.A9 | [Confermato da codice — creato 2026-05-13] |
+| **459** | **NMV – Appuntamenti – A9: Fusion** | Tipo servizio Fusion, slot 9 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.FUSION.A9 | [Confermato da codice — creato 2026-05-13] |
+| **461** | **NMV – Appuntamenti – A9: ProSkin** | Tipo servizio ProSkin, slot 9 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.PROSKIN.A9 | [Confermato da codice — creato 2026-05-13] |
+| **463** | **NMV – Appuntamenti – A9: Annullato** | Annullamento appuntamento 9 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.CANCEL.A9 | [Confermato da codice — creato 2026-05-13] |
+| **465** | **NMV – Appuntamenti – A9: Rinviato** | Rinvio appuntamento 9 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.RINVIO.A9 | [Confermato da codice — creato 2026-05-13] |
+| **467** | **NMV – Appuntamenti – Appuntamento 10** | Trigger: nuovo appuntamento slot 10 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.A10 | [Confermato da codice — creato 2026-05-13] |
+| **469** | **NMV – Appuntamenti – A10: Fusion** | Tipo servizio Fusion, slot 10 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.FUSION.A10 | [Confermato da codice — creato 2026-05-13] |
+| **471** | **NMV – Appuntamenti – A10: ProSkin** | Tipo servizio ProSkin, slot 10 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.PROSKIN.A10 | [Confermato da codice — creato 2026-05-13] |
+| **473** | **NMV – Appuntamenti – A10: Annullato** | Annullamento appuntamento 10 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.CANCEL.A10 | [Confermato da codice — creato 2026-05-13] |
+| **475** | **NMV – Appuntamenti – A10: Rinviato** | Rinvio appuntamento 10 | **Si** — `apertura-scheda` CONFIG.APPOINTMENT_TAGS.RINVIO.A10 | [Confermato da codice — creato 2026-05-13] |
 
 ---
 
