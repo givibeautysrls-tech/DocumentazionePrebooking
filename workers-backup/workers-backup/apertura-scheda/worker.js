@@ -166,8 +166,8 @@ function validateAnnullaRequest(data) {
     if (!a.keapId || typeof a.keapId !== "string" && typeof a.keapId !== "number") {
       errors.push("appuntamento.keapId obbligatorio");
     }
-    if (!a.numeroAppuntamento || isNaN(Number(a.numeroAppuntamento)) || Number(a.numeroAppuntamento) < 1 || Number(a.numeroAppuntamento) > 4) {
-      errors.push("appuntamento.numeroAppuntamento obbligatorio (1, 2, 3 o 4)");
+    if (!a.numeroAppuntamento || isNaN(Number(a.numeroAppuntamento)) || Number(a.numeroAppuntamento) < 1 || Number(a.numeroAppuntamento) > 10) {
+      errors.push("appuntamento.numeroAppuntamento obbligatorio (1-10)");
     }
   }
   return {
@@ -871,33 +871,58 @@ var CONFIG = {
     A3: 289,
     A4: 365,
     A5: 375,
+    A6: 427,
+    A7: 437,
+    A8: 447,
+    A9: 457,
+    A10: 467,
     PROSKIN: {
       A1: 309,
       A2: 313,
       A3: 317,
       A4: 369,
-      A5: 379
+      A5: 379,
+      A6: 431,
+      A7: 441,
+      A8: 451,
+      A9: 461,
+      A10: 471
     },
     FUSION: {
       A1: 307,
       A2: 311,
       A3: 315,
       A4: 367,
-      A5: 377
+      A5: 377,
+      A6: 429,
+      A7: 439,
+      A8: 449,
+      A9: 459,
+      A10: 469
     },
     CANCEL: {
       A1: 291,
       A2: 293,
       A3: 295,
       A4: 371,
-      A5: 383
+      A5: 383,
+      A6: 433,
+      A7: 443,
+      A8: 453,
+      A9: 463,
+      A10: 473
     },
     RINVIO: {
       A1: 299,
       A2: 301,
       A3: 303,
       A4: 373,
-      A5: 381
+      A5: 381,
+      A6: 435,
+      A7: 445,
+      A8: 455,
+      A9: 465,
+      A10: 475
     }
   },
   // Custom Fields per Keap
@@ -921,7 +946,7 @@ var CONFIG = {
       ANNULLATO: "_Annullato"
     }
   },
-  // Configurazione campi per i 5 appuntamenti (deprecated fields rimossi)
+  // Configurazione campi per i 10 appuntamenti (deprecated fields rimossi)
   APPOINTMENT_FIELDS: {
     1: {
       trattamenti: 133,
@@ -947,6 +972,31 @@ var CONFIG = {
       trattamenti: 227,
       ora: 229,
       data: 231
+    },
+    6: {
+      trattamenti: 241,
+      ora: 243,
+      data: 245
+    },
+    7: {
+      trattamenti: 247,
+      ora: 249,
+      data: 251
+    },
+    8: {
+      trattamenti: 253,
+      ora: 255,
+      data: 257
+    },
+    9: {
+      trattamenti: 259,
+      ora: 261,
+      data: 263
+    },
+    10: {
+      trattamenti: 265,
+      ora: 267,
+      data: 269
     }
   },
   // Zone per riconoscimento tipo trattamento
@@ -1593,8 +1643,23 @@ async function determineAppointmentNumber(env, contactId, trattamenti) {
   } else if (!tags.includes(CONFIG.APPOINTMENT_TAGS.A5)) {
     numeroAppuntamento = 5;
     newTags.push(CONFIG.APPOINTMENT_TAGS.A5);
+  } else if (!tags.includes(CONFIG.APPOINTMENT_TAGS.A6)) {
+    numeroAppuntamento = 6;
+    newTags.push(CONFIG.APPOINTMENT_TAGS.A6);
+  } else if (!tags.includes(CONFIG.APPOINTMENT_TAGS.A7)) {
+    numeroAppuntamento = 7;
+    newTags.push(CONFIG.APPOINTMENT_TAGS.A7);
+  } else if (!tags.includes(CONFIG.APPOINTMENT_TAGS.A8)) {
+    numeroAppuntamento = 8;
+    newTags.push(CONFIG.APPOINTMENT_TAGS.A8);
+  } else if (!tags.includes(CONFIG.APPOINTMENT_TAGS.A9)) {
+    numeroAppuntamento = 9;
+    newTags.push(CONFIG.APPOINTMENT_TAGS.A9);
+  } else if (!tags.includes(CONFIG.APPOINTMENT_TAGS.A10)) {
+    numeroAppuntamento = 10;
+    newTags.push(CONFIG.APPOINTMENT_TAGS.A10);
   } else {
-    throw new Error("ha gi\xE0 5 appuntamenti, non puoi aggiungerne altri");
+    throw new Error("ha gi\xE0 10 appuntamenti, non puoi aggiungerne altri");
   }
   const trattamentiLower = trattamenti.toLowerCase();
   const isProskin = trattamentiLower.includes("proskin");
@@ -1649,7 +1714,7 @@ async function syncNextAppointment(env, contactId) {
     console.log(`\u{1F4C5} Oggi: ${today.toISOString()} (comparison time)`);
     let nextAppointment = null;
     let closestDate = null;
-    for (const slotNum of [1, 2, 3, 4, 5]) {
+    for (const slotNum of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) {
       const fieldIds = CONFIG.APPOINTMENT_FIELDS[slotNum];
       if (!fieldIds) continue;
       console.log(`
