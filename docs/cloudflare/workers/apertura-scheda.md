@@ -222,18 +222,23 @@ Mappa dei tag Keap per numero appuntamento e tipo di operazione: [Confermato da 
 APPOINTMENT_TAGS: {
   // Tag appuntamento standard
   A1: 285, A2: 287, A3: 289, A4: 365, A5: 375,
+  A6: 427, A7: 437, A8: 447, A9: 457, A10: 467,
 
   // Tag per trattamento PROSKIN
-  PROSKIN: { A1: 309, A2: 313, A3: 317, A4: 369, A5: 379 },
+  PROSKIN: { A1: 309, A2: 313, A3: 317, A4: 369, A5: 379,
+             A6: 431, A7: 441, A8: 451, A9: 461, A10: 471 },
 
   // Tag per trattamento FUSION
-  FUSION:  { A1: 307, A2: 311, A3: 315, A4: 367, A5: 377 },
+  FUSION:  { A1: 307, A2: 311, A3: 315, A4: 367, A5: 377,
+             A6: 429, A7: 439, A8: 449, A9: 459, A10: 469 },
 
   // Tag annullamento
-  CANCEL:  { A1: 291, A2: 293, A3: 295, A4: 371, A5: 383 },
+  CANCEL:  { A1: 291, A2: 293, A3: 295, A4: 371, A5: 383,
+             A6: 433, A7: 443, A8: 453, A9: 463, A10: 473 },
 
   // Tag rinvio
-  RINVIO:  { A1: 299, A2: 301, A3: 303, A4: 373, A5: 381 }
+  RINVIO:  { A1: 299, A2: 301, A3: 303, A4: 373, A5: 381,
+             A6: 435, A7: 445, A8: 455, A9: 465, A10: 475 }
 }
 ```
 
@@ -269,7 +274,14 @@ Custom fields per appuntamento (per numero appuntamento): [Confermato da codice]
 |-------------|-------------------|-----------|----------|
 | 1 | 133 | 185 | 173 |
 | 2 | 135 | 179 | 177 |
-| 3+ | [Da verificare] | [Da verificare] | [Da verificare] |
+| 3 | 137 | 187 | 181 |
+| 4 | 219 | 225 | 221 |
+| 5 | 227 | 231 | 229 |
+| 6 | 241 | 245 | 243 |
+| 7 | 247 | 251 | 249 |
+| 8 | 253 | 257 | 255 |
+| 9 | 259 | 263 | 261 |
+| 10 | 265 | 269 | 267 |
 
 ---
 
